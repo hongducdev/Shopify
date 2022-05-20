@@ -1,0 +1,82 @@
+.footer {
+    margin-top: 127px;
+    max-width: 1170px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 77px;
+    border-bottom: 1px solid #EDEDED;
+
+    &-logo {
+        font-weight: 700;
+        font-size: 28px;
+        color: #313131;
+    }
+
+    &-desc {
+        margin-top: 35px;
+        font-size: 16px;
+        color: $black;
+        margin-bottom: 64px;
+        max-width: 236px;
+    }
+
+    &-contact {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &-contact li {
+        background-color: #F2F2F2;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    &-list h4 {
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+
+    &-list ul li{
+        margin-bottom: 20px;
+    }
+
+    &-list div {
+        position: relative;
+    }
+
+    &-list div input {
+        background-color: #F2F2F2;
+        outline: none;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+    }
+
+    &-list div svg {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+    }
+}
+
+.copyright {
+    margin-top: 44px;
+    font-size: 16px;
+    color: $black;
+    font-weight: 400;
+    padding-bottom: 40px;
+    max-width: 1170px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,116 @@
+.root {
+    position: relative;
+    z-index: 10;
+}
+
+.header-elli {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header {
+    background-color: #F2F2F2;
+
+    &-navbar {
+        padding-top: 30px;
+        padding-bottom: 72px;
+        max-width: $max-width;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-navbar-logo {
+        font-weight: 700;
+        font-size: 28px;
+        color: $black;
+    }
+    
+    &-navbar-list,
+    &-navbar-inup {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &-navbar-list li a,
+    &-navbar-inup li a {
+        color: $light-black;
+        font-weight: 400;
+        font-size: 18px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &-navbar-list li a:hover {
+        color: $black;
+    }
+
+    &-navbar-inup button {
+        @include btn-green();
+        box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+    }
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 109px;
+    }
+
+    &-main-text {
+        max-width: 550px;
+    }
+
+    &-main-text h1 {
+        width: 100%;
+        font-weight: 700;
+        font-size: 78px;
+        color: $black;
+        text-align: center;
+        line-height: 80px;
+        margin-top: 66px;
+        margin-bottom: 36px;
+    }
+
+    &-main-text h1 span{
+        color: $green;
+    }
+
+    &-main-text p {
+        color: $light-black;
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 63px;
+    }
+
+    &-main-button,
+    &-main-button div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-main-button {
+        gap: 37px;
+    }
+
+    &-main-button button{
+        @include btn-green();
+        box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+    }
+
+    &-main-button div {
+        gap: 13px;
+        color: $light-black;
+    }
+
+    &-main-button div a {
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,120 @@
+.say {
+    margin-top: 140px;
+    max-width: $max-width;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &-sub {
+        font-size: 18px;
+        color: $light-black;
+        margin-bottom: 30px;
+    }
+
+    &-title {
+        font-size: 45px;
+        color: $black;
+        margin-bottom: 80px;
+        font-weight: 500;
+    }
+
+    &-main {
+        position: relative;
+    }
+
+    &-main-bg {
+        position: absolute;
+        top: 0;
+        width: 892px;
+        height: 540px;
+        background-color: #F2F2F2;
+        z-index: -1;
+        transform: translateX(15%);
+    }
+
+    &-list {
+        padding-top: 103px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        z-index: 3;
+    }
+
+    &-card {
+        max-width: 380px;
+        padding:  40px 32px;
+        text-align: left;
+        background: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+        border-radius: 5px;
+    }
+
+    &-card h6 {
+        font-weight: 600;
+        font-size: 14px;
+        color: #32435C;
+        margin-bottom: 20px;
+    }
+
+    &-card p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #6A635B;
+        margin-bottom: 20px;
+    }
+
+    &-card div {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 21px;
+    }
+
+    &-card h5 {
+        font-weight: 600;
+        font-size: 14px;
+        color: #32435C;
+    }
+
+    &-list-arrow {
+        margin-top: 59px;
+        max-width: 120px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100rem;
+        background-color: white;
+    }
+
+    &-list-arrow div {
+        width: 50px;
+        height: 50px;
+        background-color: $black;
+        border-radius: 100rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-list-arrow div:nth-child(1) {
+        background-color: transparent;
+    }
+    &-list-arrow div:nth-child(2) {
+        box-shadow: 0px 8px 15px rgba(72, 72, 138, 0.08);
+    }
+}
+
+.say-container {
+    position: relative;
+}
+
+.say-vector {
+    position: absolute;
+    right: 0;
+}

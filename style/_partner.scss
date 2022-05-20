@@ -1,0 +1,21 @@
+.partner {
+    padding-top: 76px;
+    padding-bottom: 215px;
+    max-width: 1130px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner-container {
+    position: relative;
+}
+
+.partner-vector {
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-20%);
+}
